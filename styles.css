@@ -1,0 +1,206 @@
+    :root {
+      font-size: 10px;
+      --main-color: #d3ad7f;
+      --black: #131313;
+      --bg: #010103;
+      --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    .caixa-video {
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+    .caixa-video video {
+      min-width: 100%;
+      min-height: 100%;
+      position: fixed;
+      top: 0;
+    }
+    .mascara {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.99) 30%, rgba(10, 12, 16, 0.69) 75%);
+    }
+    section {
+      padding: 3rem 2rem;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-color: var(--bg);
+      border-bottom: var(--border);
+      width: 100vw;
+    }
+    .header section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 1.5rem 2rem;
+    }
+    .header section a img {
+      height: 6rem;
+    }
+    .header section nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .header section nav a {
+      font-size: 1.8rem;
+      color: #fff;
+      transition: all 0.5s ease;
+    }
+    .header section nav a:hover {
+      color: var(--main-color);
+      border-bottom: 0.1rem solid var(--main-color);
+      padding-bottom: 0.5rem;
+    }
+    .caixa-principal {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .caixa-principal div {
+      max-width: 65rem;
+    }
+    .caixa-principal div h3 {
+      font-size: 6rem;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    .caixa-principal div p {
+      font-size: 2rem;
+      color: #aaa;
+      font-weight: lighter;
+      padding: 1rem 0;
+      line-height: 1.8;
+    }
+    .botao-link {
+      font-size: 1.8rem;
+      cursor: pointer;
+      margin-top: 2rem;
+      display: inline-block;
+      color: #fff;
+      background-color: var(--main-color);
+      padding: 1rem 3rem;
+      border: none;
+      transition: 0.3s linear;
+    }
+    .botao-link:hover {
+      letter-spacing: 0.1rem;
+    }
+    .titulo {
+      text-align: center;
+      font-size: 4rem;
+      color: #fff;
+      text-transform: uppercase;
+      padding-bottom: 3.5rem;
+    }
+    .titulo span {
+      color: var(--main-color);
+    }
+    .caixa-sobre .container-sobre {
+      display: flex;
+      align-items: center;
+      background-color: var(--bg);
+      justify-content: space-between;
+      gap: 5rem;
+      flex-wrap: wrap;
+    }
+    .imagem-sobre {
+      flex: 1 1 45rem;
+      text-align: center;
+    }
+    .imagem-sobre img {
+      max-width: 100%;
+      height: auto;
+    }
+    .texto-sobre {
+      flex: 1 1 45rem;
+      padding: 2rem;
+    }
+    .texto-sobre h3 {
+      font-size: 3rem;
+      color: #fff;
+    }
+    .texto-sobre p {
+      font-size: 1.6rem;
+      color: #aaa;
+      padding: 1rem 0;
+      line-height: 1.8;
+    }
+    .modal {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      gap: 20px;
+      z-index: 4;
+      position: fixed;
+      top: 50%;
+      left: -19%;
+      transform: translate(-50%, -50%);
+      transition: left 1s linear;
+    }
+    .mascara-modal {
+      visibility: hidden;
+      z-index: 3;
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        font-size: 9px;
+      }
+      .header section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .caixa-principal div h3 {
+        font-size: 4rem;
+      }
+      .texto-sobre h3 {
+        font-size: 2.4rem;
+      }
+      .botao-link {
+        font-size: 1.6rem;
+      }
+      .modal {
+        left: -80%;
+      }
+    }
+    @media (max-width: 480px) {
+      :root {
+        font-size: 8px;
+      }
+      .caixa-principal div h3 {
+        font-size: 3.2rem;
+      }
+      .titulo {
+        font-size: 3rem;
+      }
+
+    }

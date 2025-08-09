@@ -189,7 +189,7 @@
         font-size: 1.6rem;
       }
       .modal {
-        left: -80%;
+        left: -90%;
       }
     }
     @media (max-width: 480px) {

@@ -158,7 +158,6 @@
       position: fixed;
       top: 50%;
       left: -19%;
-      transform: translate(-200%, -50%);
       transition: left 1s linear;
     }
     .mascara-modal {

@@ -159,7 +159,7 @@
       top: 50%;
       left: -19%;
       transform: translate(-50%, -50%);
-      transition: left 2.8s linear;
+      transition: left 1.8s linear;
     }
     .mascara-modal {
       visibility: hidden;
@@ -189,7 +189,7 @@
         font-size: 1.6rem;
       }
       .modal {
-        left: -90%;
+        left: -77%;
       }
     }
     @media (max-width: 480px) {

@@ -158,7 +158,7 @@
       position: fixed;
       top: 50%;
       left: -19%;
-      transform: translate(-50%, -50%);
+      transform: translate(-200%, -50%);
       transition: left 1s linear;
     }
     .mascara-modal {
@@ -188,10 +188,10 @@
       .botao-link {
         font-size: 1.6rem;
       }
-      .modal {
-        left: -90%;
-      }
+
     }
+
+
     @media (max-width: 480px) {
       :root {
         font-size: 8px;

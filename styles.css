@@ -188,6 +188,10 @@
       .botao-link {
         font-size: 1.6rem;
       }
+
+      .modal {
+        left: -19%;
+      }
     }
     @media (max-width: 480px) {
       :root {

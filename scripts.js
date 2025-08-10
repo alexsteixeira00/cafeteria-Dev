@@ -13,6 +13,7 @@ function mostrarModal() {
 }
 
 function esconderModal() {
-    modal.style.left = '-19%';
+    modal.style.left = '-80%';
     mascara.style.visibility = 'hidden';
 }
+

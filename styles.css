@@ -157,7 +157,7 @@
       z-index: 4;
       position: fixed;
       top: 50%;
-      left: -19%;
+      left: -80%;
       transform: translate(-50%, -50%);
       transition: left 1.8s linear;
     }
@@ -188,11 +188,9 @@
       .botao-link {
         font-size: 1.6rem;
       }
-
-      .modal {
-        left: -19%;
-      }
     }
+
+
     @media (max-width: 480px) {
       :root {
         font-size: 8px;
@@ -203,5 +201,7 @@
       .titulo {
         font-size: 3rem;
       }
-
+      .modal {
+        left: -80%;
+      }
     }
